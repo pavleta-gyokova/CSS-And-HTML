@@ -1,0 +1,104 @@
+
+/* Apply below style to all elements in the page */
+
+*{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*avoids the box-model issue and makes sure the width does not get stretch if you add margin, padding and border to the container  */
+    outline: none;
+    border: none;
+    text-decoration: none; /*removes the underline from the anchor tag*/
+    text-transform: capitalize;
+    overflow: hidden; /*clip off the extra text going out of the box*/
+    scroll-behavior: smooth;
+}
+
+/* style the menu section */
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* background-color: green; */
+    height: 65px;
+    z-index: 100; /*header menu items should be always raised like a 3D view*/
+}
+
+.header .nav-bar{
+    display: flex; /*move items inside it*/
+}
+
+.header .nav-bar a{
+    flex: 1; /*every a tag will take an equal space*/
+    text-align: center;
+    font-size: 22px;
+    line-height: 65px; /*align elements vertically centered*/
+    color: aliceblue;
+}
+
+/* apply hover and change brightness */
+.header .nav-bar a:hover{
+    filter: brightness(0.8);
+}
+
+/* apply different background color on each a tag */
+.header .nav-bar a:nth-child(1){
+    background: rgb(238, 83, 11);
+}
+.header .nav-bar a:nth-child(2){
+    background: rgb(19, 168, 19);
+}
+.header .nav-bar a:nth-child(3){
+    background: rgb(206, 20, 159);
+}
+.header .nav-bar a:nth-child(4){
+    background: rgb(209, 223, 20);
+}
+.header .nav-bar a:nth-child(5){
+    background: rgb(11, 147, 238);
+}
+
+/* Style the main body section */
+
+.container{
+    display: flex;
+    width: 500%;
+    height: 100vh; /*this will occupy visible screen height*/
+}
+
+.container .main-section{
+    display: flex;
+    width: 20%;
+    height: 100%;
+    align-items: center; /*aligns the content vertically centered*/
+    justify-content: center; /*aligns the content horizontally centered*/
+    font-size: 8vw; /* 8 of the total view width*/
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: azure;
+}
+
+.container .main-section:nth-child(1){
+    background: rgb(238, 83, 11);
+}
+.container .main-section:nth-child(2){
+    background: rgb(19, 168, 19);
+}
+.container .main-section:nth-child(3){
+    background: rgb(206, 20, 159);
+}
+.container .main-section:nth-child(4){
+    background: rgb(209, 223, 20);
+}
+.container .main-section:nth-child(5){
+    background: rgb(11, 147, 238);
+}
+
+/* Apply media queries to adjust styling for different devices */
+@media (max-width: 750px){
+    .header .nav-bar a span{
+        display: none; /*hide the text, only show icons up to screen width of 750px*/
+    }
+}
