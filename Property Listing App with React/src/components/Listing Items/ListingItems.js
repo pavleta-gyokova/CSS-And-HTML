@@ -14,7 +14,7 @@ function ListingItems() {
                 </div>
             <span className='listing-title'>Single-Family Home</span>
             <p className='listing-short-description'>4 beds 2 baths 2,539 sqft</p>
-            <p className='listing-long-description'>Amazing home located in Northeast Columbia. This beautiful have a open floor plan with 4 bedroom and 2.5 baths. Its located on a corner lot with TWO drive ways and a 2 car garage. Open backyard that's fenced with an amazing patio deck area. Conveniently located near popular shopping stores and Sandhill.</p>
+            <p className='listing-long-description'>Amazing home located in Northeast Columbia. This beautiful have a open floor plan with 4 bedroom and 2 baths. Its located on a corner lot with TWO drive ways and a 2 car garage. Open backyard that's fenced with an amazing patio deck area. Conveniently located near popular shopping stores and Sandhill.</p>
             <hr/>
             <span className='listing-time'> 2 days ago</span>
             </div>
